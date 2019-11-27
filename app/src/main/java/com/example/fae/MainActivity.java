@@ -15,10 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btn = (Button) findViewById (R.id.btn);
     }
-
-    public void firebs1(View view) {
-
-    }
+    
     public class Student {
 
         private int GradeClass;
