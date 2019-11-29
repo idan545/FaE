@@ -26,9 +26,22 @@
         android:orientation="horizontal" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et1"
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="38dp" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
         android:ems="10"
         android:hint="Phone Number:"
         android:inputType="phone"
@@ -36,13 +49,12 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="78dp" />
+        android:layout_height="62dp" />
 
     <Button
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:onClick="firebs1"
         android:text="Log In"
         tools:ignore="HardcodedText" />
 
