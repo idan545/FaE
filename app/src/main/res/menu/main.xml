@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Auth"
+        android:title="Authentication"
+        android:orderInCategory="100"
+
+        />
+    <item
+        android:id="@+id/RTDB"
+        android:title="Database"
+        android:orderInCategory="200"
+
+        />
+    <item
+        android:id="@+id/Map"
+        android:title="Storage"
+        android:orderInCategory="300"
+        />
+</menu>
