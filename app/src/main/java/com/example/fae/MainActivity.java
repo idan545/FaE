@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public void Register(View view){
         stEmail = eteAddress.getText().toString();
         stPhone = etpNumber.getText().toString();
+        Toast.makeText(this, stEmail+stPhone, Toast.LENGTH_SHORT).show();
         createAccount();
     }
     public boolean onCreateOptionsMenu(Menu menu) {
