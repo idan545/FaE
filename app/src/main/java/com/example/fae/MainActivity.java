@@ -72,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
             t=new Intent(this, Main2Activity.class);
             startActivity(t);
         }
+        if (s.equals("Storage")){
+            t=new Intent(this, Main3Activity.class);
+            startActivity(t);
+        }
         return super.onOptionsItemSelected(item);
     }
 }
