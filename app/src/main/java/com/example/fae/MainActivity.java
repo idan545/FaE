@@ -36,7 +36,11 @@ public class MainActivity extends AppCompatActivity {
         fbAuth = FirebaseAuth.getInstance();
     }
 
-    public void createAccount() {
+
+    public void Register(View view){
+        stEmail = eteAddress.getText().toString();
+        stPhone = etpNumber.getText().toString();
+        Toast.makeText(this, stEmail+stPhone, Toast.LENGTH_SHORT).show();
         fbAuth.createUserWithEmailAndPassword(stEmail, stPhone)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -47,13 +51,6 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
-    }
-
-    public void Register(View view){
-        stEmail = eteAddress.getText().toString();
-        stPhone = etpNumber.getText().toString();
-        Toast.makeText(this, stEmail+stPhone, Toast.LENGTH_SHORT).show();
-        createAccount();
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
