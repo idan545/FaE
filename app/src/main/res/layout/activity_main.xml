@@ -65,7 +65,42 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="0.5" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Student"
+            android:textOff="Student"
+            android:textOn="Teacher"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/cBconnectview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Remember Me!" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="update"
+            android:text="update" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
 
         <Button
             android:id="@+id/btn"
@@ -80,6 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
+
     </LinearLayout>
 
     <Space
