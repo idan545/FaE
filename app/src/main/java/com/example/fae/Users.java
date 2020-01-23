@@ -10,16 +10,16 @@ public class Users{
         this.stPhone=stPhone;
         this.uid=uid;
     }
-    public String getstEmail(){
+    public String getEmail(){
         return stEmail;
     }
-    public void setstEmail(String stEmail){
+    public void setEmail(String stEmail){
         this.stEmail=stEmail;
     }
-    public String getstPhone(){
+    public String getPhone(){
         return stPhone;
     }
-    public void setstPhone(String stPhone){
+    public void setPhone(String stPhone){
         this.stPhone=stPhone;
     }
     public String getUid(){

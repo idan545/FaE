@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btn = (Button) findViewById(R.id.btn); // Register Button
         eteAddress = (EditText) findViewById(R.id.et1); // Email Address
         etpNumber = (EditText) findViewById(R.id.et2); // Phone Number
+        switch1 = (Switch) findViewById(R.id.switch1); // Switch
         fbAuth = FirebaseAuth.getInstance();
         cBconnectview=(CheckBox)findViewById(R.id.cBconnectview);
     }
@@ -75,14 +76,13 @@ public class MainActivity extends AppCompatActivity {
     public void Register(View view){
         stEmail = eteAddress.getText().toString();
         stPhone = etpNumber.getText().toString();
-        Toast.makeText(this, stEmail+stPhone, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, stEmail+" : "+stPhone, Toast.LENGTH_SHORT).show();
         FirebaseUser user = fbAuth.getCurrentUser();
-        if (Switch.isChecked()) {
+        if (switch1.isChecked())
             status = true;
-        }
         else status = false;
         userdb = new Users(stEmail,stPhone,uid);
-        if (status) refUsers.child("Teachers").child(stEmail).setValue()
+        if (status) refUsers.child("Teachers").child(stEmail).setValue(stPhone);
         fbAuth.createUserWithEmailAndPassword(stEmail, stPhone)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
